@@ -1,120 +1,46 @@
-<img src="https://i.imgur.com/eA6clZr.png">
+# Getting Started with Create React App
 
-# Gitfolio  [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=personal%20website%20and%20a%20blog%20for%20every%20github%20user%20&url=https://github.com/imfunniee/gitfolio) ![GitHub release](https://img.shields.io/github/release/imfunniee/gitfolio.svg) ![GitHub top language](https://img.shields.io/github/languages/top/imfunniee/gitfolio.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/imfunniee/gitfolio.svg) ![GitHub](https://img.shields.io/github/license/imfunniee/gitfolio.svg)
-  
-### personal website + blog  for every github user
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Gitfolio will help you get started with a portfolio website where you could showcase your work + a blog that will help you spread your ideas into  real world.
+## Available Scripts
 
-# Getting Started
+In the project directory, you can run:
 
-### Let's build
+### `yarn start`
 
-a. Clone this repository using ``git clone https://github.com/imfunniee/gitfolio.git`` or just simply download it.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-```
-$ git clone https://github.com/imfunniee/gitfolio.git
-```
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-b. Now ``cd`` into the repository you just cloned ``cd gitfolio`` and run the below command
+### `yarn test`
 
-```
-$ npm i
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-This will install all the dependencies you will need to build your website.
+### `yarn build`
 
-c. After its done installing the dependencies run this command where `username` is your username on github
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```
-$ node build --name username
-```
-This will create `index.css` and `index.html` files in your working directory.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-d. Congrats, you just made yourself a personal website. 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-e. To run your website navigate to `index.html` in your browser. [you won't see blogs until you are on localhost]
+### `yarn eject`
 
-> if you get stuck somewhere or get an error, please create an issue
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-### Let's customize
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-#### Enabling Dark theme
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-To enable dark theme just provide `--dark` as an argument while building
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-```
-$ node build --name username --dark
-```
+## Learn More
 
-#### Customize background image
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To customize the background image just provide `--background [url]` argument while building
-
-```
-$ node build --name username --background https://images.unsplash.com/photo-1557277770-baf0ca74f908?w=1634
-```
-
-You could also add in your custom CSS inside `index.css` to give it a more personal feel.
-
-
-### Let's Publish
-
-Push the files to github. You can host your website using github pages by naming your repo ``username.github.io``. You can also use a custom domain.
-
-
-### Updating
-
-To update your info, simply run
-
-```
-$ node update
-```
-This will update your info and your repository info.
-
-To Update background or theme you need to run `build` command again.
-
-
-### Add a Blog
-
-To add your first blog run this command, make sure the title don't have spaces instead use "-".
-
-```
-$ node blog --title my-first-blog
-```
-
-This will create a `my-first-blog` folder inside `blog`. Inside `my-first-blog` you will find an `index.html` file which contains all the necessary elements for writing a blog. Customize the content of the file to write your first blog.
-
-This also adds content to `blog.json` file. This file helps in showcasing your blogs on your personal website as [cards](https://imfunniee.github.io/gitfolio/#blog_section). You could customize the JSON object that corresponds your current blog.
-
-Blog Demo? [here](https://imfunniee.github.io/gitfolio/blog/my-first-blog/)
-
-Default JSON Format
-```
-{
-  "url_title": "my-first-blog", // the title you provide while creating a new blog, this appears in url
-  "title": "Lorem ipsum dolor sit amet", // main title of blog
-  "sub_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", // sub-title of blog
-  "top_image": "https://images.unsplash.com/photo-1553748024-d1b27fb3f960?w=1450", // main image of blog
-  "visible": true // don't worry about this
-}
-```
-
-More Arguments for Blog
-
-```
---subtitle [subtitle] : gives blog a subtitle (Deafult : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
---pagetitle [pagetitle] : gives blog page a title
---folder [folder] : give folder a title
-```
-
-> (use "-" instead of spaces)
-
-### Enable Blogs
-
-Blog are disabled by default. To enable them head over to `assets/index.html` and find `<div id="blog_section" style="display:none;">`. Remove the style attribute to show your blogs on your personal website.
-
-If you have run build command before adding a blog you need have to remove the style attribute from `index.html` file aswell.
-
-## License
-![GitHub](https://img.shields.io/github/license/imfunniee/gitfolio.svg)
+To learn React, check out the [React documentation](https://reactjs.org/).
